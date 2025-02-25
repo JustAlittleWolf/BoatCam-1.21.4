@@ -1,4 +1,4 @@
-# BoatCam [1.18.1][Fabric][Client]
+# BoatCam [1.21.4][Fabric][Client]
 ### Description
 Some nice tweaks to the boat and player camera for way cooler drifts on ice :D
 

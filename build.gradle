@@ -1,10 +1,7 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id 'maven-publish'
 }
-
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -15,8 +12,7 @@ repositories {
 	maven { url "https://maven.shedaniel.me/" }
 
 	maven {
-		name = 'TerraformersMC'
-		url = 'https://maven.terraformersmc.com/'
+		url = "https://maven.terraformersmc.com/releases/"
 	}
 }
 
@@ -41,8 +37,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 upwards uses Java 17.
-	it.options.release.set(17)
+	it.options.release.set(21)
 }
 
 java {
